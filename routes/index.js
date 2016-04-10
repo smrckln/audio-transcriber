@@ -68,7 +68,6 @@ exports.youtube_dl = function(io){
 									console.log('Socket Final Emit');
 									io.sockets.emit('data final', text);
 									callback(null, text);
-									console.log(value);
 									fs.unlink(value);
 								});
 							});
